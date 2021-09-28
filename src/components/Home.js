@@ -36,6 +36,7 @@ class Home extends React.Component {
       name: item.name,
       image: item.image,
       price: item.price,
+      email: email,
     };
     axios.post(
       `https://backend-exam28.herokuapp.com/addFruit?email=${email}`,
