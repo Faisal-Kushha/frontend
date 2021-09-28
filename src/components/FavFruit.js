@@ -55,7 +55,7 @@ class FavFruit extends React.Component {
 
     axios
       .delete(
-        `https://backend-exam28.herokuapp.com/deleteFruit/id=${id}?email=${email}`
+        `https://backend-exam28.herokuapp.com/deleteFruit/${id}?email=${email}`
       )
       .then((result) => {
         this.setState({
